@@ -65,7 +65,7 @@ let Ols = new stats.Ols(td.endog, exog).fit()
 // Print summary
 Ols.summary()
 ```
-![alt text](https://raw.githubusercontent.com/lostVkng/smodels/master/examples/ols.png)
+![alt text](examples/ols.png)
 
 #### Prediction (in & out of sample)
 ```javascript
