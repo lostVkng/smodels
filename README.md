@@ -1,12 +1,16 @@
 # smodels
 
 An experiment in bringing Data Science and Statistics to Javascript.
+All work is done on gitlab and mirrored on github:
+
 
 ## Installation
 Install via npm
 ```
 npm i smodels
 ```
+https://gitlab.com/lostVkng/smodels
+https://github.com/lostVkng/smodels
 
 
 ## Linear Regressions
