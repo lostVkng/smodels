@@ -4,7 +4,7 @@
   "description": "Statistics in Javascript",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lostVkng/smodels.git"
+    "url": "git+https://gitlab.com/lostVkng/smodels.git"
   },
   "keywords": [
     "Stats",
@@ -15,9 +15,9 @@
   "author": "Tom Jones",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/lostVkng/smodels/issues"
+    "url": "https://gitlab.com/lostVkng/smodels/issues"
   },
-  "homepage": "https://github.com/lostVkng/smodels#readme",
+  "homepage": "https://gitlab.com/lostVkng/smodels#readme",
   "scripts": {
     "test": "mocha ./tests"
   },
