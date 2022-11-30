@@ -16,44 +16,47 @@ const stats = require("../index.js");
 //   ],
 // };
 
-// let tdJamesLimitEight = {
-//   endog: {
-//     title: "Energy (kWh)",
-//     data: [129211, 60470, 68314, 89671, 82607, 108221, 100673, 115006],
-//   },
-//   exog: [
-//     {
-//       title: "OAT",
-//       data: [37, 6, 9, 17, 14, 24, 21, 27],
-//     },
-//     {
-//       title: "Week/Weekend",
-//       data: [0, 1, 1, 0, 0, 0, 0, 0],
-//     },
-//   ],
-// };
-
-let tdJamesFull = {
+let tdJamesLimitEight = {
   endog: {
     title: "Energy (kWh)",
-    data: [129211, 60470, 68314, 89671, 82607, 108221, 100673, 115006, 109119],
+    data: [129211, 60470, 68314, 89671, 82607, 108221, 100673, 115006],
   },
   exog: [
     {
       title: "OAT",
-      data: [37, 6, 9, 17, 14, 24, 21, 27, 29],
+      data: [37, 6, 9, 17, 14, 24, 21, 27],
     },
     {
       title: "Week/Weekend",
-      data: [0, 1, 1, 0, 0, 0, 0, 0, 1],
+      data: [0, 1, 1, 0, 0, 0, 0, 0],
     },
   ],
 };
+
+// let tdJamesFull = {
+//   endog: {
+//     title: "Energy (kWh)",
+//     data: [129211, 60470, 68314, 89671, 82607, 108221, 100673, 115006, 109119],
+//   },
+//   exog: [
+//     {
+//       title: "OAT",
+//       data: [37, 6, 9, 17, 14, 24, 21, 27, 29],
+//     },
+//     {
+//       title: "Week/Weekend",
+//       data: [0, 1, 1, 0, 0, 0, 0, 0, 1],
+//     },
+//   ],
+// };
 // create and fit model
 // let model = new stats.Ols(tdJames.endog, tdJames.exog).fit();
 // let model = new stats.Ols(td.endog, td.exog).fit();
 
 // create and fit model
-let model = new stats.Gls(tdJamesFull.endog, tdJamesFull.exog).fit();
+let model = new stats.Gls(
+  tdJamesLimitEight.endog,
+  tdJamesLimitEight.exog
+).fit();
 
 console.log(model);
