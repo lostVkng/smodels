@@ -3,7 +3,7 @@
 */
 
 
-const Decimal = require('Decimal.js')
+const Decimal = require('decimal.js')
 const Arr = require('./array.js')
 
 
